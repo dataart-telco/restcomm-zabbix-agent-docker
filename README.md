@@ -10,8 +10,8 @@ You should use LLD with `restcomm.discovery` key
 
 Discovery result contains the followings keys
 
-1. {#APP_NAME} - cluster app name. `restcomm` by default
-2. {#INSTANCE_ID} - restocmm node Instance id
+1. `{#APP_NAME}` - cluster app name. `restcomm` by default
+2. `{#INSTANCE_ID}` - restocmm node Instance id
 
 ### Available metrics:
 metrics template is `restcomm.metrics[{#INSTANCE_ID},<Metric Key>]`
