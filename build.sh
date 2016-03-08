@@ -1,3 +1,3 @@
 #!/bin/bash
 
-docker build -t restcomm-zabbix-agent-docker .
+docker build -t restcomm-zabbix-agent .

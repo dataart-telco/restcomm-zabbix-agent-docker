@@ -1,4 +1,4 @@
-FROM datelco/zabbix-agent-docker
+FROM datelco/zabbix-agent
 
 MAINTAINER gdubina@dataart.com
 
@@ -7,5 +7,4 @@ ADD files/restcomm-zabbix-module.so /opt/restcomm-agent/restcomm-zabbix-module.s
 RUN echo "LoadModulePath=/opt/restcomm-agent" >> /etc/zabbix/zabbix_agentd.conf
 RUN echo "LoadModule=restcomm-zabbix-module.so" >> /etc/zabbix/zabbix_agentd.conf
 
-ADD files/za_config.sh /etc/my_init.d/0_za_config.sh
 ADD files/configure.sh /etc/my_init.d/0_configure_module.sh
