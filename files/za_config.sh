@@ -13,5 +13,3 @@ for i in $( set -o posix ; set | grep ^ZA_ | sort -rn ); do
         echo "${reg}=${val}" >> /etc/zabbix/zabbix_agentd.conf
     fi
 done
-
-service zabbix-agent restart
