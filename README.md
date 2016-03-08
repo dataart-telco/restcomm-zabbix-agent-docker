@@ -25,6 +25,8 @@ docker run -d \
 --net host \
 datelco/restcomm-zabbix-agent
 ```
+---
+## How to use app
 
 ### Discovery
 You should use LLD with `restcomm.discovery` key
