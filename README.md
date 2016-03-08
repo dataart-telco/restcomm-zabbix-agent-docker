@@ -9,6 +9,7 @@ It uses `shared object modules` intead of `UserParameter`.
 You should use LLD with `restcomm.discovery` key
 
 Discovery result contains the followings keys
+
 1. {#APP_NAME} - cluster app name. `restcomm` by default
 2. {#INSTANCE_ID} - restocmm node Instance id
 
@@ -16,6 +17,7 @@ Discovery result contains the followings keys
 metrics template is `restcomm.metrics[{#INSTANCE_ID},<Metric Key>]`
 
 Metric Keys:
+
 1. LiveCalls
 2. TotalCallsSinceUptime
 3. FailedCalls
