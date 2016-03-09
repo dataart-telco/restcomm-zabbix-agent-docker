@@ -24,11 +24,16 @@ if [[ -z "$RESTCOMM_MAX_CALLS" ]]; then
     RESTCOMM_MAX_CALLS=50
 fi
 
+if [[ -z "$COLLECTOR_INTERVAL" ]]; then
+    COLLECTOR_INTERVAL=10
+fi
+
 cat > zabbix-agent.ini <<EOL
 [main]
 marathonHost = $MARATHON_HOST
 appId = $APP_ID
 logLevel = $LOG_LEVEL
+collectorInterval = $COLLECTOR_INTERVAL
 [restcomm]
 port = $RESTCOMM_PORT
 user = $RESTCOMM_USER
