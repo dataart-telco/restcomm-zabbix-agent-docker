@@ -3,7 +3,7 @@
 docker rm -f restcomm-agent
 
 docker run -d --name restcomm-agent \
--e MARATHON_HOST=192.168.176.214:8080 \
+-e MARATHON_HOST=192.168.122.207:8080 \
 -e MESOS_MASTER_HOST=192.168.122.182:5050 \
 -e ZA_Server=192.168.122.2 \
 -e ZA_ServerActive=192.168.122.2:31151 \
